@@ -14,7 +14,8 @@ sudo apt update
 
 # Check architecture and install the correct version of libasound2
 if dpkg --print-architecture | grep -q "amd64"; then
-    sudo apt install -y libnss3 libgtk-3-0 libx11-xcb1 libasound2t64
+#    sudo apt install -y libnss3 libgtk-3-0 libx11-xcb1 libasound2t64
+    sudo apt install -y libnss3 libgtk-3-0 libx11-xcb1 libasound2
 else
     sudo apt install -y libnss3 libgtk-3-0 libx11-xcb1 libasound2
 fi
